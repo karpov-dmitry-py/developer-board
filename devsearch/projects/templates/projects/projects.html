@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+{% load template_filters %}
+{% block content %}
+    <h1>Projects (total of {{ projects.count }})</h1>
+    <table>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Votes</th>
+        <th>Ratio</th>
+        <th>Created at</th>
+        <th>Link</th>
+        {% for project in projects %}
+            <tr>
+                <td>{{ project.id }}</td>
+                <td>{{ project.title }}</td>
+                <td>{{ project.vote_total }}</td>
+                <td>{{ project.vote_ratio }}%</td>
+                <td>{{ project.created_at }}</td>
+                <td><a href="{%url 'project' project.id %}">view details</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock content %}
