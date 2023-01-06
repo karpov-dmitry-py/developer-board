@@ -1,0 +1,32 @@
+h1 {
+    color: yellowgreen;
+}
+
+p {
+    color: blue;
+}
+
+img.card {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 5px;
+    width: 500px;
+}
+
+img.thumbnail {
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    max-width: 150px;
+    max-height: 50px;
+}
+
+table, td, th {
+    border: 1px solid;
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+}

@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+{% block content %}
+
+<h1>Project form</h1>
+<form method="POST">
+    <p>Are you sure to delete "{{ object }}" ?</p>
+    <a href="{% url 'projects' %}"><button>Go back to projects</button></a>
+    <input type="submit" value="Confirm deletion">
+</form>
+
+{% endblock content %}
